@@ -3,10 +3,16 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<!-- iframe -->
-	<link rel="stylesheet" type="text/css" href="css/iframe.css">
+	<!-- Import -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/format.css">
+
 </header>
      
 <body>
-	<iframe src="topMenu.html" width="100%" scrolling="no"></iframe>
+	<iframe src="pages/header.html" width="100%" height="7%"></iframe>
+	<div class="iframe inline"> <!-- Transfer to css ;; Make independent div -->
+		<iframe src="pages/body.html" width="80%" height="50%"></iframe>
+		<iframe src="pages/side.html" width="20%" height="50%"></iframe> <!-- alignment la -->
+	</div>
 </body>	
